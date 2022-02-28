@@ -9,8 +9,18 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class PostController {
 
+    @GetMapping("/imgTest")
+    public String imgTest() {
+        return "imgTest";
+    }
+
     @GetMapping("/writeForm")
     public String writeForm() {
         return "writeForm";
+    }
+
+    @GetMapping("/upDateForm")
+    public String upDateForm() {
+        return "upDateForm";
     }
 }
